@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl w-full px-4 md:px-8 mx-auto;
+  }
+
+  .heading1 {
+    @apply text-xl lg:text-[52px] font-bold text-[#054C73];
+  }
+
+  .heading2 {
+    @apply text-xl lg:text-[32px] font-bold text-[#333];
+  }
+
+  .heading3 {
+    @apply text-lg lg:text-2xl text-[#333] font-semibold;
+  }
+
+  .description {
+    @apply text-xs lg:text-xl text-[#666];
+  }
+}
+
+.bg-hero {
+  @apply relative bg-transparent overflow-hidden;
+}
+
+.bg-hero::before {
+  @apply w-full h-full absolute overflow-hidden;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  content: '';
+}
+
+.bg-hero-furniture {
+  background-image: url('./assets/images/bg-hero.png');
+}
+
+.bullets {
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, 50%);
+  background: #000;
+  color: white;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: solid 0.475rem #fff;
+  display: grid;
+  place-items: center;
+}
