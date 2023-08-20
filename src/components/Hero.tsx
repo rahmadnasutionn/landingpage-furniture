@@ -1,5 +1,3 @@
-import React from 'react'
-
 function Hero() {
   return (
     <header className='bg-hero bg-hero-furniture min-h-screen overflow-hidden'>

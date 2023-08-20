@@ -1,5 +1,3 @@
-import  * as React from 'react'
-
 interface Item {
   id: number;
   image: string;
